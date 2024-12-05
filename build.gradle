@@ -1,0 +1,21 @@
+plugins {
+    id 'java'
+}
+
+group 'com.nuix.interview'
+version '1.0-SNAPSHOT'
+
+java {
+    toolchain {
+        languageVersion = JavaLanguageVersion.of(21)
+    }
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation 'com.google.guava:guava:27.0-jre'
+    testImplementation 'junit:junit:4.11'
+}
